@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud CI/CD Beginner Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>My Cloud CI/CD Site</h1>
+
+    <div class="info">
+      <p><b>Name:</b> Ahmad Naji Awad</p>
+      <p><b>Course:</b> Cloud Computing</p>
+    </div>
+
+    <section>
+      <h2>What is CI/CD?</h2>
+      <p>
+        CI/CD stands for Continuous Integration and Continuous Delivery/Deployment.
+        Continuous Integration means developers frequently merge their code changes into a shared repository
+        and run automated checks to detect issues early.
+        Continuous Delivery/Deployment then takes the validated code and automatically prepares (or releases)
+        it to production.
+        This approach reduces manual work, improves reliability, and speeds up updates in cloud systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>My Pipeline</h2>
+      <p>
+        After I push my code to the main branch, GitHub Actions runs a workflow that checks the required files
+        and uploads the website files.
+        Then it deploys the site automatically to GitHub Pages, so the live website updates with every successful push.
+      </p>
+    </section>
+
+    <section class="interaction">
+      <h2>JavaScript Interaction</h2>
+      <p>Click the button to toggle a message and change the page theme.</p>
+      <button id="btn">Click me</button>
+      <p id="msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+      <small>CI/CD with GitHub Actions + GitHub Pages</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
